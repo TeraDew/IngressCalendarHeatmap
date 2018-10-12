@@ -36,7 +36,7 @@ def WriteHTML():
         file=f.read()
         out = file.split('PutYourDataHere')[0]+data+file.split('PutYourDataHere')[1]
     
-    with open('IngressCalendaHeatMap.html','w') as f:
+    with open('IngressCalendaHeatMap.html','w',encoding='UTF-8') as f:
         f.writelines(out)
 
 

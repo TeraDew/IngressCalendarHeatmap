@@ -6,7 +6,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0.rc2/echarts.min.js"></script>
 </head>
 <body>
-    <div id="main" style="width:100%;height:700px;"></div>
+    <div id="main" style="width:100%;height:800px;"></div>
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById('main'));
 
@@ -56,7 +56,7 @@
             },
             {
                 top: 640,
-                range: '2016',
+                range: '2015',
                 cellSize: ['auto', 20]
             }],
 
@@ -74,6 +74,12 @@
                 type: 'heatmap',
                 coordinateSystem: 'calendar',
                 calendarIndex: 2,
+                data: data
+            },
+            {
+                type: 'heatmap',
+                coordinateSystem: 'calendar',
+                calendarIndex: 3,
                 data: data
             }]
 
